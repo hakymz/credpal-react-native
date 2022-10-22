@@ -26,10 +26,9 @@ install the following packages for the plugin to work perfectly.
 
 - react-native-webview
 
-## Periculum Analytics V1
+## credpal-react-native usage
 
-How to use the Periculum analytics method.
-If you are using the V1 SDK methods then do the following:
+How to use the credpal-react-native component.
 
 Example:
 
@@ -46,7 +45,7 @@ import { CredPal } from "credpal-react-native";
 />;
 ```
 
-## Periculum Analytics V1 Parameters
+## credpal-react-native
 
 | Name      | Description                                                                                         | Type   | Required |
 | --------- | --------------------------------------------------------------------------------------------------- | ------ | -------- |
