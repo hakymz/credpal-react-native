@@ -50,7 +50,7 @@ import { CredPal } from "credpal-react-native";
 
 | Name      | Description                                                                                         | Type     | Required |
 | --------- | --------------------------------------------------------------------------------------------------- | -------- | -------- |
-| apiKey    | Required. Public Key attached to account                                                            | String   | Yes      |
+| apiKey    | Required. your key                                                                                  | String   | Yes      |
 | amount    | Amount to be paid                                                                                   | String   | Yes      |
 | product   | Product paid for                                                                                    | String   | Yes      |
 | onSuccess | callback function if transaction was successful (it will also return status and data the callback ) | function | Yes      |
