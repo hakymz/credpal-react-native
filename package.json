@@ -1,6 +1,6 @@
 {
   "name": "credpal-react-native",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "React native libary for CredPal",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/hakymz/credpal-react-native"
   },
-  "keywords": [],
+  "keywords": [
+    "credpal",
+    "credpal-react-native"
+  ],
   "author": "Kymztech",
   "license": "ISC",
   "peerDependencies": {

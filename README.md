@@ -4,18 +4,18 @@ ReactNavite libary for credpal
 
 ## Installation
 
-Add credpal-react-native-periculum to your project by running;
+Add credpal-react-native to your project by running;
 
 Yarn
 
 ```bash
-yarn add credpal-react-native-periculum
+yarn add credpal-react-native
 ```
 
 NPM
 
 ```bash
-npm install credpal-react-native-periculum
+npm install credpal-react-native
 ```
 
 &nbsp;
@@ -37,7 +37,7 @@ import React from "react";
 import { CredPal } from "credpal-react-native";
 
 <CredPal
-  product=""
+  product="Product Paid For"
   onCancel={() => console.log("Cancelled")}
   onError={(e) => console.log(e.error, res.status)}
   onSuccess={(res) => console.log(res.data, res.status)}
