@@ -1,6 +1,6 @@
 {
   "name": "credpal-react-native",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React native libary for CredPal",
   "main": "index.js",
   "scripts": {
