@@ -1,7 +1,14 @@
 import React from "react";
 import { Modal, SafeAreaView, View } from "react-native";
 import { WebView } from "react-native-webview";
-export default CredPal = ({ apiKey, amount, onSuccess, onCancel, onError }) => {
+export default CredPal = ({
+  apiKey,
+  product = "",
+  amount,
+  onSuccess = () => {},
+  onCancel = () => {},
+  onError = () => {},
+}) => {
   const [showModal, setshowModal] = React.useState(false);
 
   React.useEffect(() => {
@@ -26,7 +33,7 @@ export default CredPal = ({ apiKey, amount, onSuccess, onCancel, onError }) => {
       var checkout = new Checkout({
        key: '${apiKey}', // Your Key
        amount: '${amount}',
-       product: 'Macbook Pro',
+       product: ${product},
        onClose: () => {
         var resp = {event:'cancelled'};
         window.ReactNativeWebView.postMessage(JSON.stringify(resp))

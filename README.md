@@ -37,6 +37,7 @@ import React from "react";
 import { CredPal } from "credpal-react-native";
 
 <CredPal
+  product=""
   onCancel={() => console.log("Cancelled")}
   onError={(e) => console.log(e.error, res.status)}
   onSuccess={(res) => console.log(res.data, res.status)}
@@ -47,12 +48,14 @@ import { CredPal } from "credpal-react-native";
 
 ## credpal-react-native
 
-| Name      | Description                                                                                         | Type   | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | ------ | -------- |
-| apiKey    | Required. Public Key attached to account                                                            | String | Yes      |
-| onSuccess | callback function if transaction was successful (it will also return status and data the callback ) | String | No       |
-| onCancel  | callback function if user cancels the payment                                                       | String | No       |
-| onError   | callback function if the payment was not successful                                                 | String | No       |
+| Name      | Description                                                                                         | Type     | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | -------- | -------- |
+| apiKey    | Required. Public Key attached to account                                                            | String   | Yes      |
+| amount    | Amount to be paid                                                                                   | String   | Yes      |
+| product   | Product paid for                                                                                    | String   | Yes      |
+| onSuccess | callback function if transaction was successful (it will also return status and data the callback ) | function | Yes      |
+| onCancel  | callback function if user cancels the payment                                                       | function | No       |
+| onError   | callback function if the payment was not successful                                                 | function | No       |
 
 &nbsp;
 &nbsp;
