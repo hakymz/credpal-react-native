@@ -13,11 +13,6 @@
   "keywords": [],
   "author": "Kymztech",
   "license": "ISC",
-  "babel": {
-    "presets": [
-      "@babel/preset-react"
-    ]
-  },
   "files": [
     "CredPal"
   ],
